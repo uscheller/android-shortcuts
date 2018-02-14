@@ -1,3 +1,5 @@
+# Creates a screenshot on the connected device and copies it over to your desktop
+
 adb shell screencap -p /sdcard/screen.png
 adb pull /sdcard/screen.png ~/Desktop/screenshot_`date +%s`.png
 adb shell rm /sdcard/screen.png

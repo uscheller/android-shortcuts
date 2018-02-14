@@ -1,3 +1,5 @@
+# Creates a video on your connected device. Press Ctrl+C once to stop recording.
+
 video=screenrecord_`date +%s`.mp4
 
 __cleanup ()
@@ -8,4 +10,5 @@ __cleanup ()
 
 trap __cleanup EXIT
 
+echo "Recording video. Press Ctrl+C once to stop recording and downloading a copy to your Desktop."
 adb shell screenrecord /sdcard/$video
