@@ -1,0 +1,2 @@
+PACKAGE_NAME=$(basename `dirname $0`)
+adb shell monkey -p ${PACKAGE_NAME} -v 5000

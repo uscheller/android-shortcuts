@@ -1,0 +1,11 @@
+video=screenrecord_`date +%s`.mp4
+
+__cleanup ()
+{
+    sleep 1
+    adb pull /sdcard/$video ~/Desktop/
+}
+
+trap __cleanup EXIT
+
+adb shell screenrecord /sdcard/$video
