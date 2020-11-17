@@ -1,8 +1,15 @@
 # Android Scripts
 
-A collection of useful scripts for developing, testing and exploring Android apps. They make tasks like getting a screenshot or video from your Android device as quick as clicking a button.
+This repository contains a collection of useful scripts for developing, testing and exploring Android apps on a Mac. They make tasks like getting a screenshot or video from your Android device as quick as clicking a button.
 
-When describing a rare bug, a picture or video is worth a thousand words. The same goes for presenting your application to an audience.
+It automates:
+* Taking a screenshot from the currently connected phone and downloading it to your Desktop
+* Record a video from the currently connected phone, stop it by pressing Ctrl+C, and it will be downloaded to your Desktop
+* Clear all app data from a specified application package name to test the innitial startup behavior
+* Uninstall an app completely
+* Run the Application Exerciser Monkey for a specified package name
+
+I use them a lot in my daily routine, especially for augmenting bug reports with screenshots and videos, discussing design, and clearing App Data for having a clean application state.
 
 ### Prerequisites
 
