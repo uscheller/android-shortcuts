@@ -6,7 +6,7 @@ __cleanup ()
 {
     sleep 1
     adb pull /sdcard/$video ~/Desktop/
-    ffmpeg -i ~/Desktop/$video -vcodec libx264 -crf 30 ~/Desktop/c_$video.mp4 && rm ~/Desktop/$video || echo "Compression is not possible because FFMPEG is not available"
+    ffmpeg -i ~/Desktop/$video -vcodec libx264 -crf 30 ~/Desktop/c_$video && rm ~/Desktop/$video || echo "Compression is not possible because FFMPEG is not available"
 }
 
 trap __cleanup EXIT
